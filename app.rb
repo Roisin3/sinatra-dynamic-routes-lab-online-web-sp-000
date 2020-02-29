@@ -11,6 +11,12 @@ class App < Sinatra::Base
     num
   end
 
+  get '/say/:number/:phrase' do
+    final_string = ""
+    str = params[:phrase] + " "
+    str * 5
+  end
+
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     str = params[:word1] + " " + params[:word2] + " " + params[:word3] + " " + params[:word4] + " " + params[:word5] + "."
     str
