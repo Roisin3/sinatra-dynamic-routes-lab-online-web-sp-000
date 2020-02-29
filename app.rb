@@ -38,7 +38,7 @@ class App < Sinatra::Base
     end
 
     answer
-      
+
   end
 
 end
