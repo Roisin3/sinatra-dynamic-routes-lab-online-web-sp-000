@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    final_string = ""
+    #final_string = ""
     str = params[:phrase] + " "
     str * params[:number]
   end
